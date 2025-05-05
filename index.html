@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>墨笺 Markdown</title>
+    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="editor-container">
+        <!-- 工具栏 -->
+        <div class="editor-toolbar">
+            <!-- 格式工具 -->
+            <button data-action="bold" title="加粗"><i class="fas fa-bold"></i></button>
+            <button data-action="italic" title="斜体"><i class="fas fa-italic"></i></button>
+            <button data-action="header" title="标题"><i class="fas fa-heading"></i></button>
+
+            <div class="toolbar-divider"></div>
+
+            <!-- 列表工具 -->
+            <button data-action="ulist" title="无序列表"><i class="fas fa-list-ul"></i></button>
+            <button data-action="olist" title="有序列表"><i class="fas fa-list-ol"></i></button>
+            <button data-action="checklist" title="任务列表"><i class="fas fa-tasks"></i></button>
+
+            <div class="toolbar-divider"></div>
+
+            <!-- 插入元素 -->
+            <button data-action="quote" title="引用块"><i class="fas fa-quote-right"></i></button>
+            <button data-action="code" title="代码块"><i class="fas fa-code"></i></button>
+            <button data-action="table" title="插入表格"><i class="fas fa-table"></i></button>
+            <button data-action="hr" title="分割线"><i class="fas fa-minus"></i></button>
+
+            <div class="toolbar-divider"></div>
+
+            <!-- 功能操作 -->
+            <button data-action="save" title="保存草稿"><i class="fas fa-save"></i></button>
+            <button data-action="clear" title="清除格式"><i class="fas fa-eraser"></i></button>
+
+            <div class="toolbar-divider"></div>
+
+            <!-- 导出选项 -->
+            <button data-action="export-html" class="export-btn">📄 HTML</button>
+            <button data-action="export-md" class="export-btn">📝 Markdown</button>
+
+        </div>
+
+        <!-- 编辑区 -->
+        <div class="editor-wrapper">
+            <textarea id="editor" placeholder="在此书写你的故事..."></textarea>
+            <div id="preview" class="preview-area"></div>
+        </div>
+
+        <!-- 状态栏 -->
+        <div class="editor-statusbar">
+            <span id="wordcount">字数：0</span>
+            <span id="lastsave">最后保存（每30秒自动保存）：从未保存</span>
+            <span id="editor-name">&copy 墨笺Markdown</span>
+        </div>
+    </div>
+
+    <!-- 依赖库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="editor.js"></script>
+</body>
+
+</html>
