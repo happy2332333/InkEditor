@@ -29,3 +29,4 @@
 ### 环境要求
 - 现代浏览器（推荐Chrome 90+/Safari 14+）
 - 网络连接（用于加载CDN资源）
+- 通过VsCode插件的Live Server等本地服务启动
