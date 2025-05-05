@@ -1,7 +1,7 @@
 # InkEditor
 
 📖 与 [HAPPY的生活札记](https://happy2332333.netlify.app/) 风格深度集成的沉浸式写作工具，提供优雅的Markdown编辑体验
-
+![InkEditorViewPic](https://pic1.imgdb.cn/item/6818833958cb8da5c8dd8320.png)
 ## 🌟 功能特性
 
 ### ✍️ 智能编辑
